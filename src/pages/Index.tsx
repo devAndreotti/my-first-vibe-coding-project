@@ -63,12 +63,28 @@ const Index = () => {
         }),
       });
 
+      console.log('Response status:', response.status);
+      console.log('Response headers:', response.headers);
+
       if (!response.ok) {
         throw new Error(`Erro HTTP: ${response.status}`);
       }
 
-      const data = await response.json();
-      console.log('Resposta recebida do N8n:', data);
+      // Verificar se há conteúdo na resposta
+      const responseText = await response.text();
+      console.log('Response text:', responseText);
+
+      let data = {};
+      if (responseText) {
+        try {
+          data = JSON.parse(responseText);
+        } catch (parseError) {
+          console.error('Erro ao fazer parse do JSON:', parseError);
+          throw new Error('Resposta inválida do servidor');
+        }
+      }
+
+      console.log('Dados processados do N8n:', data);
       
       // Processar a resposta do webhook
       let aiResponse = '';
@@ -80,6 +96,8 @@ const Index = () => {
         aiResponse = data.content;
       } else if (data.output) {
         aiResponse = data.output;
+      } else if (data.result) {
+        aiResponse = data.result;
       } else {
         aiResponse = 'Olá! Recebi sua mensagem sobre os ingredientes. Deixe-me pensar em uma receita deliciosa para você! 🍳✨';
       }
