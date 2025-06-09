@@ -17,6 +17,15 @@ interface Message {
   timestamp: Date;
 }
 
+interface WebhookResponse {
+  response?: string;
+  message?: string;
+  content?: string;
+  output?: string;
+  result?: string;
+  [key: string]: any;
+}
+
 const Index = () => {
   const [messages, setMessages] = useState<Message[]>([]);
   const [inputValue, setInputValue] = useState('');
@@ -74,10 +83,10 @@ const Index = () => {
       const responseText = await response.text();
       console.log('Response text:', responseText);
 
-      let data = {};
+      let data: WebhookResponse = {};
       if (responseText) {
         try {
-          data = JSON.parse(responseText);
+          data = JSON.parse(responseText) as WebhookResponse;
         } catch (parseError) {
           console.error('Erro ao fazer parse do JSON:', parseError);
           throw new Error('Resposta inválida do servidor');
