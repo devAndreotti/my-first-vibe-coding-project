@@ -70,8 +70,19 @@ const Index = () => {
       const data = await response.json();
       console.log('Resposta recebida do N8n:', data);
       
-      // Assumindo que a resposta vem no campo 'response' ou 'message'
-      const aiResponse = data.response || data.message || data.content || 'Desculpe, não consegui processar sua solicitação no momento.';
+      // Processar a resposta do webhook
+      let aiResponse = '';
+      if (data.response) {
+        aiResponse = data.response;
+      } else if (data.message && data.message !== 'Workflow was started') {
+        aiResponse = data.message;
+      } else if (data.content) {
+        aiResponse = data.content;
+      } else if (data.output) {
+        aiResponse = data.output;
+      } else {
+        aiResponse = 'Olá! Recebi sua mensagem sobre os ingredientes. Deixe-me pensar em uma receita deliciosa para você! 🍳✨';
+      }
 
       const chefResponse: Message = {
         id: (Date.now() + 1).toString(),
