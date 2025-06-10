@@ -5,7 +5,7 @@
   <!-- Tamanho do repositório -->
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/devAndreotti/my-first-vibe-coding-project?color=FFF&labelColor=7d83ff&style=flat-square">
   <!-- Licença -->
-  <img alt="GitHub License" src="https://img.shields.io/github/license/devAndreotti/my-first-vibe-coding-project?color=FFF&labelColor=ba45ff&style=flat-square">
+  <img alt="GitHub License" src="https://img.shields.io/github/license/devAndreotti/devAndreotti?color=FFF&labelColor=ba45ff&style=flat-square">
 </p>
 
 <div align="center">
@@ -20,7 +20,6 @@ Este é um experimento leve de automação com IA — onde a interface elegante 
 ## ⚙️ Funcionalidades Principais
 * 📥 Recebe ingredientes via Webhook
 * 🧠 Usa IA (Google Gemini) para gerar receitas personalizadas
-* 🥗 Sugere alternativas e adaptações
 * 🖼 Interface elegante com temas variados
 * 📤 Retorna resposta pronta com modo culinário
 
