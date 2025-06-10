@@ -1,4 +1,4 @@
-# 🧠 Chef AI — Agente Culinário com IA
+# 🧠 Chef AI - Agente Culinário
 <p align="center">
   <!-- Contador de linguagens -->
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/devAndreotti/my-first-vibe-coding-project?color=FFF&labelColor=41bfff&style=flat-square">
