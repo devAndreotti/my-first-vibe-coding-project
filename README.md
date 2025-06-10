@@ -1,15 +1,15 @@
 # 🧠 Chef AI — Agente Culinário com IA
 <p align="center">
   <!-- Contador de linguagens -->
-  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/devAndreotti/my-first-vibe-coding-project?color=FFF&labelColor=7c3aed&style=flat-square">
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/devAndreotti/my-first-vibe-coding-project?color=FFF&labelColor=41bfff&style=flat-square">
   <!-- Tamanho do repositório -->
-  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/devAndreotti/my-first-vibe-coding-project?color=FFF&labelColor=7c3aed&style=flat-square">
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/devAndreotti/my-first-vibe-coding-project?color=FFF&labelColor=7d83ff&style=flat-square">
   <!-- Licença -->
-  <img alt="GitHub License" src="https://img.shields.io/github/license/devAndreotti/my-first-vibe-coding-project?color=FFF&labelColor=7c3aed&style=flat-square">
+  <img alt="GitHub License" src="https://img.shields.io/github/license/devAndreotti/my-first-vibe-coding-project?color=FFF&labelColor=ba45ff&style=flat-square">
 </p>
 
 <div align="center">
-  <img src="./chefai-preview.png" alt="Visual do Chef AI">
+  <img src="./src/project-01.png" alt="Visual do Chef AI">
 </div>
 
 ## 📋 Sobre o Projeto
@@ -25,20 +25,13 @@ Este é um experimento leve de automação com IA — onde a interface elegante 
 * 📤 Retorna resposta pronta com modo culinário
 
 ## 🛠 Tecnologias Utilizadas
-* **Vite**
+* **Lovable** (editor AI-driven com deploy fácil)
+* **n8n** (orquestrador de fluxos automatizados)
+* **Google Gemini Chat Model**
 * **React + TypeScript**
 * **Tailwind CSS**
 * **shadcn/ui**
-* **n8n** (orquestrador de fluxos automatizados)
-* **Google Gemini Chat Model**
-* **Lovable** (editor AI-driven com deploy fácil)
-
-## 🌐 Visualize o Projeto
-Você pode acessar a aplicação publicada neste [link](https://lovable.dev/projects/4c6c1b82-1ed0-4aa5-8a2e-ebaff8653149).
-
-<div align="center">
-  <img src="./n8n-flow.png" alt="Fluxo no n8n">
-</div>
+* **Vite**
 
 ## 📂 Estrutura do Projeto
 ```
@@ -62,7 +55,7 @@ Você pode acessar a aplicação publicada neste [link](https://lovable.dev/proj
 
 ### 🔹 Localmente com VSCode
 ```bash
-git clone https://github.com/SEU_USUARIO/chef-ai.git
+git clone https://github.com/devAndreotti/my-first-vibe-coding-project.git
 cd chef-ai
 npm install
 npm run dev
@@ -73,6 +66,13 @@ npm run dev
 * O agente usa o **Google Gemini** para gerar uma resposta
 * A resposta é processada e devolvida via **Respond to Webhook**
 * O frontend exibe o conteúdo usando React + Tailwind
+
+## 🌐 Visualize o Projeto
+Você pode acessar a aplicação publicada neste [link](https://lovable.dev/projects/4c6c1b82-1ed0-4aa5-8a2e-ebaff8653149).
+
+<div align="center">
+  <img src="./src/workflow-01.png" alt="Fluxo no n8n">
+</div>
 
 ## 💪 Como Contribuir
 Contribuições são muito bem-vindas!
