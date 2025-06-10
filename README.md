@@ -13,13 +13,13 @@
 </div>
 
 ## 📋 Sobre o Projeto
-O **Chef AI** é um projeto desenvolvido no estilo *vibe coding*, unindo criatividade, automação e inteligência artificial. A aplicação consiste em um agente culinário que responde a pedidos de receitas com base em ingredientes enviados pelo usuário. A mágica acontece com a integração entre o **Lovable**, o **n8n** e o modelo **Google Gemini**.
+O **Chef AI** é um projeto desenvolvido no estilo *vibe coding*, unindo automação e inteligência artificial. A aplicação consiste em um agente culinário que responde a pedidos de receitas com base em ingredientes enviados pelo usuário. A mágica acontece com a integração entre o **Lovable**, o **n8n** e o modelo **Google Gemini**.
 
 Este é um experimento leve de automação com IA — onde a interface elegante encontra a inteligência conversacional.
 
 ## ⚙️ Funcionalidades Principais
 * 📥 Recebe ingredientes via Webhook
-* 🧠 Usa IA (Google Gemini) para gerar receitas personalizadas
+* 🧠 Usa IA (Google Gemini Flash) para gerar receitas personalizadas
 * 🖼 Interface elegante com temas variados
 * 📤 Retorna resposta pronta com modo culinário
 
