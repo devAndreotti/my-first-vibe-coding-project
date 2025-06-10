@@ -1,73 +1,94 @@
-# Welcome to your Lovable project
+# 🧠 Chef AI — Agente Culinário com IA
+<p align="center">
+  <!-- Contador de linguagens -->
+  <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/devAndreotti/my-first-vibe-coding-project?color=FFF&labelColor=7c3aed&style=flat-square">
+  <!-- Tamanho do repositório -->
+  <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/devAndreotti/my-first-vibe-coding-project?color=FFF&labelColor=7c3aed&style=flat-square">
+  <!-- Licença -->
+  <img alt="GitHub License" src="https://img.shields.io/github/license/devAndreotti/my-first-vibe-coding-project?color=FFF&labelColor=7c3aed&style=flat-square">
+</p>
 
-## Project info
+<div align="center">
+  <img src="./chefai-preview.png" alt="Visual do Chef AI">
+</div>
 
-**URL**: https://lovable.dev/projects/4c6c1b82-1ed0-4aa5-8a2e-ebaff8653149
+## 📋 Sobre o Projeto
+O **Chef AI** é um projeto desenvolvido no estilo *vibe coding*, unindo criatividade, automação e inteligência artificial. A aplicação consiste em um agente culinário que responde a pedidos de receitas com base em ingredientes enviados pelo usuário. A mágica acontece com a integração entre o **Lovable**, o **n8n** e o modelo **Google Gemini**.
 
-## How can I edit this code?
+Este é um experimento leve de automação com IA — onde a interface elegante encontra a inteligência conversacional.
 
-There are several ways of editing your application.
+## ⚙️ Funcionalidades Principais
+* 📥 Recebe ingredientes via Webhook
+* 🧠 Usa IA (Google Gemini) para gerar receitas personalizadas
+* 🥗 Sugere alternativas e adaptações
+* 🖼 Interface elegante com temas variados
+* 📤 Retorna resposta pronta com modo culinário
 
-**Use Lovable**
+## 🛠 Tecnologias Utilizadas
+* **Vite**
+* **React + TypeScript**
+* **Tailwind CSS**
+* **shadcn/ui**
+* **n8n** (orquestrador de fluxos automatizados)
+* **Google Gemini Chat Model**
+* **Lovable** (editor AI-driven com deploy fácil)
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4c6c1b82-1ed0-4aa5-8a2e-ebaff8653149) and start prompting.
+## 🌐 Visualize o Projeto
+Você pode acessar a aplicação publicada neste [link](https://lovable.dev/projects/4c6c1b82-1ed0-4aa5-8a2e-ebaff8653149).
 
-Changes made via Lovable will be committed automatically to this repo.
+<div align="center">
+  <img src="./n8n-flow.png" alt="Fluxo no n8n">
+</div>
 
-**Use your preferred IDE**
+## 📂 Estrutura do Projeto
+```
+├── src/
+│   ├── components/              # Componentes visuais reutilizáveis
+│   ├── pages/                   # Páginas principais da aplicação
+│   ├── styles/                  # Arquivos de estilo com Tailwind
+│   ├── hooks/                   # Hooks personalizados
+│   └── utils/                   # Funções auxiliares
+├── public/                      # Arquivos públicos (imagens, favicon, etc.)
+├── index.html                   # Estrutura base do HTML
+├── vite.config.ts               # Configuração do Vite
+└── README.md                    # Documentação do projeto
+```
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 🧭 Guia de Implementação
+### 🔹 Usando o Lovable (recomendado)
+1. Acesse o projeto em [Lovable](https://lovable.dev/projects/4c6c1b82-1ed0-4aa5-8a2e-ebaff8653149).
+2. Faça alterações nos arquivos com auxílio da IA.
+3. Clique em **Share > Publish** para atualizar o link público.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+### 🔹 Localmente com VSCode
+```bash
+git clone https://github.com/SEU_USUARIO/chef-ai.git
+cd chef-ai
+npm install
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+## 🧠 Como Funciona no n8n
+* O Webhook no n8n recebe os dados enviados
+* O agente usa o **Google Gemini** para gerar uma resposta
+* A resposta é processada e devolvida via **Respond to Webhook**
+* O frontend exibe o conteúdo usando React + Tailwind
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 💪 Como Contribuir
+Contribuições são muito bem-vindas!
+1. Faça um fork deste repositório
+2. Crie uma branch: `git checkout -b feature/nome-da-feature`
+3. Commit: `git commit -m 'feat: adiciona nova funcionalidade'`
+4. Push: `git push origin feature/nome-da-feature`
+5. Crie um Pull Request
 
-**Use GitHub Codespaces**
+## 📝 Nota
+Este projeto foi construído de forma experimental e prática, unindo ferramentas modernas e inteligência artificial. O foco foi a exploração criativa de possibilidades com automação, IA e frontend interativo.
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+<br>
 
-## What technologies are used for this project?
+---
 
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/4c6c1b82-1ed0-4aa5-8a2e-ebaff8653149) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+<p align="center">
+  Desenvolvido com ☕ por <a href="https://github.com/seuUsuario">Ricardo Andreotti Gonçalves</a> 🧑‍💻
+</p>
