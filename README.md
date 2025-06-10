@@ -19,7 +19,7 @@ Este é um experimento leve de automação com IA — onde a interface elegante 
 
 ## ⚙️ Funcionalidades Principais
 * 📥 Recebe ingredientes via Webhook
-* 🧠 Usa IA (Google Gemini Flash) para gerar receitas personalizadas
+* 🧠 Usa IA (Google Gemini Flash) para gerar receitas
 * 🖼 Interface elegante com temas variados
 * 📤 Retorna resposta pronta com modo culinário
 
