@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -209,18 +208,14 @@ export const WelcomeSection = ({ onExampleClick }: WelcomeSectionProps) => {
           <ul className="space-y-3 text-muted-foreground">
             <li className="flex items-center gap-3">
               <div className="w-2 h-2 bg-primary rounded-full" />
-              Criar receitas com ingredientes que você já tem
+              Criar receitas com seus ingredientes
             </li>
             <li className="flex items-center gap-3">
               <div className="w-2 h-2 bg-accent rounded-full" />
-              Sugerir substituições e alternativas
-            </li>
-            <li className="flex items-center gap-3">
-              <div className="w-2 h-2 bg-primary rounded-full" />
               Adaptar para restrições alimentares
             </li>
             <li className="flex items-center gap-3">
-              <div className="w-2 h-2 bg-accent rounded-full" />
+              <div className="w-2 h-2 bg-primary rounded-full" />
               Calcular tempo e porções
             </li>
           </ul>
