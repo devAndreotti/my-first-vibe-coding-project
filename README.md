@@ -67,7 +67,7 @@ npm run dev
 * O frontend exibe o conteúdo usando React + Tailwind
 
 ## 🌐 Visualize o Projeto
-Você pode acessar a aplicação publicada neste [link](https://lovable.dev/projects/4c6c1b82-1ed0-4aa5-8a2e-ebaff8653149).
+Você pode acessar a aplicação publicada neste [link](https://tasty-ai-chef.lovable.app).
 
 <div align="center">
   <img src="./src/workflow-01.png" alt="Fluxo no n8n">
